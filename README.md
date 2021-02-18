@@ -17,7 +17,7 @@ We have provided you with a project template that takes care of all the imports 
 
 ### Below there is a descriptions for implemented tables with Apache Cassandra:
 
-#### table: session_songs
+### table: session_songs
 ##### 1. Designing database model in Apache Cassandra we need to think Queries first - in our scenario our query will look like: 
 `SELECT artist, song, song_length FROM session_songs WHERE sessionId = 338 AND itemInSession = 4`
 ##### 2. Our <em>PRIMARY KEY</em> will consist of: 
@@ -31,7 +31,7 @@ We have provided you with a project template that takes care of all the imports 
 - `song TEXT`
 - `song_length FLOAT`
     
-#### table: user_songs
+### table: user_songs
 ##### 1. Designing database model in Apache Cassandra we need to think Queries first - in our scenario our query will look like: 
 `SELECT itemInSession, artist, song, user_firstname, user_lastname FROM user_songs WHERE userId = 10 AND sessionId = 182`
 ##### 2. Our <em>COMPOSITE PRIMARY KEY</em> will consist of: 
@@ -49,7 +49,7 @@ We have provided you with a project template that takes care of all the imports 
 - `itemInSession INT PK`  
     
 	
-#### table: app_history
+### table: app_history
 ##### 1. Designing database model in Apache Cassandra we need to think Queries first - in our scenario our query will look like: 
 `SELECT user_firstname, user_lastname FROM app_history WHERE song = 'All Hands Against His Own'`
 ##### 2. Our <em>PRIMARY KEY</em> will consist of: 
